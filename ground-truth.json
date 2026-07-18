@@ -1,0 +1,26 @@
+{
+  "01-full-admin-wildcard.json": {
+    "classification": "vulnerable",
+    "category": "Unrestricted access (Action:* / Resource:*)"
+  },
+  "02-passrole-lambda-escalation.json": {
+    "classification": "vulnerable",
+    "category": "Privilege escalation (iam:PassRole + Lambda)"
+  },
+  "03-iam-createpolicyversion-escalation.json": {
+    "classification": "vulnerable",
+    "category": "Privilege escalation (iam:CreatePolicyVersion)"
+  },
+  "04-s3-data-exfil-wildcard-resource.json": {
+    "classification": "vulnerable",
+    "category": "Data exfiltration risk (s3:GetObject on Resource:*)"
+  },
+  "05-clean-scoped-dynamodb.json": {
+    "classification": "clean",
+    "category": "Scoped to specific actions + a single resource ARN"
+  },
+  "06-clean-lambda-logging.json": {
+    "classification": "clean",
+    "category": "Scoped to specific actions + a single resource ARN"
+  }
+}

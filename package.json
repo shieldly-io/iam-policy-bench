@@ -1,0 +1,14 @@
+{
+  "name": "iam-policy-bench",
+  "version": "1.0.0",
+  "description": "Neutral, reproducible benchmark of AWS IAM policy scanners against a public corpus of known-risk policies",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "bench": "node run.js"
+  },
+  "dependencies": {
+    "@shieldly/iam-lint": "^1.1.0"
+  }
+}
